@@ -4,7 +4,7 @@ from lexer import Lexer
 
 def main():
 	text = "(143 + 903) *       123"
-	lexer = Lexer(0, text)
+	lexer = Lexer(text)
 
 	while True:
 		token = lexer.get_next_token()
