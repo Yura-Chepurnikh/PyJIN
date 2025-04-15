@@ -34,7 +34,7 @@ class Lexer:
 		current_pos = self.pos
 
 		if self.pos < len(self.text):
-			
+
 			if (self.text[self.pos] == '+'):
 				self.increment_pos()
 				return SyntaxToken(current_pos, '+', SyntaxKind.PLUS_TOKEN)
