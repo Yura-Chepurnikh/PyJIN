@@ -7,8 +7,8 @@ class Lexer:
 		self.text = text
 
 	def get_next_token(self):
-		if self.pos > len(self.text):
-			return SyntaxToken(self.pos-1, self.text[self.pos], SyntaxKind.EOF_TOKEN)
+		if self.pos >= len(self.text):
+			return SyntaxToken(self.pos, '', SyntaxKind.EOF_TOKEN)
 
 		if self.pos < len(self.text) and self.text[self.pos].isdigit():
 			begin = self.pos

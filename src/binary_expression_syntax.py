@@ -7,6 +7,7 @@ class BinaryExpressionSyntax(ExpressionSyntax):
 		self.operator_token = operator_token
 		self.right = right
 
+	@property
 	def kind(self):
 		return SyntaxKind.BINARY_EXPRESSION_TOKEN
 
